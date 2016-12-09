@@ -64,7 +64,8 @@ body {
   width: 15px;
   height: 13px;
   font-size: 13px;
-  background: yellow; }
+  color: yellow;
+  opacity: 0.3; }
 
 .icon-help {
   display: inline-block;
@@ -77,7 +78,7 @@ body {
   display: none;
   position: absolute;
   bottom: -24px;
-  left: 170px;
+  left: 180px;
   color: rgba(255, 255, 255, 0.5); }
 
 label {
@@ -147,7 +148,11 @@ input {
   color: yellow;
   right: 20px;
   top: 17px;
-  position: absolute; }
+  position: absolute;
+  opacity: 0.9; }
 
 .error .note-error, .error .icon-warning {
   display: block !important; }
+
+.error input {
+  border-bottom: 1px solid #ffe03f; }

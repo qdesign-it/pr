@@ -1,0 +1,423 @@
+.container {
+  width: 1366px;
+  margin: auto; }
+
+.btn {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  text-align: center;
+  border: solid 2px #ebf4f7;
+  padding: 0 25px;
+  display: inline-block;
+  height: 40px;
+  line-height: 36px;
+  font-family: 'Futura Lt BT';
+  cursor: pointer;
+  text-decoration: none; }
+  .btn.small {
+    padding: 0 15px;
+    height: 20px;
+    line-height: 18px; }
+
+body {
+  background-image: url(../img/bg/library.jpg);
+  background-size: cover;
+  font-family: Futura; }
+
+a {
+  text-decoration: none; }
+
+header {
+  padding: 29px 50px; }
+  header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    header .container .breadcrumbs-box {
+      text-transform: uppercase;
+      width: 457px;
+      padding: 12px 12px; }
+      header .container .breadcrumbs-box .breadcrumbs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        header .container .breadcrumbs-box .breadcrumbs a, header .container .breadcrumbs-box .breadcrumbs span {
+          font-size: 14px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.43;
+          letter-spacing: 0.7px;
+          color: rgba(255, 255, 255, 0.5); }
+        header .container .breadcrumbs-box .breadcrumbs a:after {
+          content: '>';
+          padding: 0 5px; }
+        header .container .breadcrumbs-box .breadcrumbs span {
+          color: #fff; }
+    header .container .heading-box {
+      text-align: center; }
+      header .container .heading-box .title {
+        font-size: 30px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.2;
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-shadow: 1px 3.9px 15px rgba(0, 0, 0, 0.15); }
+      header .container .heading-box .subtitle {
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 43px;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 0.7px;
+        color: rgba(255, 255, 255, 0.5); }
+      header .container .heading-box .folder img {
+        width: 60px;
+        height: 60px; }
+    header .container .buttons-box {
+      margin-left: auto; }
+      header .container .buttons-box .btn {
+        background-color: #cc6550;
+        border: solid 2px #e02a24;
+        color: #fff; }
+      header .container .buttons-box .history {
+        text-align: right;
+        color: #fff;
+        font-size: 14px;
+        etter-spacing: 1.4px;
+        text-transform: uppercase;
+        margin-top: 22px; }
+
+.controls-box .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .controls-box .container .icons-box {
+    width: 165px;
+    padding-right: 10px;
+    padding-top: 4px; }
+    .controls-box .container .icons-box .icon {
+      font-weight: 900;
+      line-height: 1.43;
+      letter-spacing: 0.7px;
+      text-align: right;
+      color: #f2f5f6;
+      text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15);
+      text-transform: uppercase;
+      font-size: 14px; }
+      .controls-box .container .icons-box .icon i {
+        font-size: 8px;
+        line-height: 14px;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        position: relative;
+        top: -2px; }
+  .controls-box .container .details-box {
+    background-color: #22424c;
+    -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 6px;
+    width: 100%; }
+    .controls-box .container .details-box.empty {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .controls-box .container .details-box.empty .title {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        color: rgba(235, 244, 247, 0.5);
+        line-height: 30px; }
+    .controls-box .container .details-box .icon-add {
+      color: #e18225;
+      width: 15px;
+      height: 15px;
+      font-size: 15px;
+      margin: 0 20px; }
+    .controls-box .container .details-box .inner {
+      background: #3482a0;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 6px;
+      -webkit-box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+              box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+      letter-spacing: 0.4px;
+      color: #ffffff;
+      text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15);
+      text-transform: lowercase; }
+
+.timeline-box {
+  margin-top: 42px; }
+  .timeline-box .triggered-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .timeline-box .triggered-grid .item {
+      background: #22424c;
+      margin-right: 20px;
+      width: 170px;
+      height: 170px;
+      padding: 2px; }
+      .timeline-box .triggered-grid .item.item-addme {
+        text-align: center;
+        height: 29px;
+        font-family: Futura PT Book;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #99d8d6;
+        text-transform: uppercase; }
+        .timeline-box .triggered-grid .item.item-addme i {
+          width: 78px;
+          height: 78px;
+          -webkit-border-radius: 39px;
+                  border-radius: 39px;
+          border: 1px solid #99d8d6;
+          line-height: 78px;
+          display: block;
+          margin: 20px auto; }
+      .timeline-box .triggered-grid .item .item-wrap {
+        border: 1px solid #d99041;
+        padding: 5px;
+        height: 166px;
+        position: relative; }
+        .timeline-box .triggered-grid .item .item-wrap .img {
+          width: 120px;
+          height: 60px;
+          background-color: #ccc0aa;
+          -webkit-box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3);
+                  box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3); }
+        .timeline-box .triggered-grid .item .item-wrap .num {
+          width: 5px;
+          height: 14px;
+          font-family: 'Futura PT';
+          font-size: 20px;
+          font-weight: 900;
+          text-align: center;
+          letter-spacing: 1px;
+          color: #e6eaed;
+          position: absolute;
+          top: 25px;
+          right: 20px; }
+        .timeline-box .triggered-grid .item .item-wrap .name {
+          font-family: 'Futura PT Book';
+          font-size: 14px;
+          line-height: 1.29;
+          letter-spacing: 0.7px;
+          color: #ffffff;
+          text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.3);
+          padding-top: 5px;
+          padding-botom: 9px; }
+        .timeline-box .triggered-grid .item .item-wrap .info div {
+          font-family: 'Futura PT Book';
+          font-size: 12px;
+          line-height: 1.7;
+          letter-spacing: 1.8px;
+          color: #fff; }
+          .timeline-box .triggered-grid .item .item-wrap .info div span {
+            font-family: 'Futura PT Book';
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 1.8px;
+            text-align: left;
+            color: #60a6c2;
+            text-transform: uppercase; }
+        .timeline-box .triggered-grid .item .item-wrap .icons {
+          height: 20px;
+          line-height: 20px; }
+          .timeline-box .triggered-grid .item .item-wrap .icons .notes {
+            font-family: 'Futura PT Book';
+            font-size: 12px;
+            letter-spacing: 1.2px;
+            color: #ebf4f7;
+            text-shadow: 0.3px 1px 2px rgba(0, 0, 0, 0.3);
+            line-height: 20px; }
+  .timeline-box .timeline-box-wrap {
+    width: 1250px;
+    margin: auto; }
+  .timeline-box .title {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+    text-align: left;
+    color: #f2f5f6;
+    text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-bottom: 8px; }
+  .timeline-box .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .timeline-box .container .volume {
+      float: right;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: auto; }
+      .timeline-box .container .volume .track {
+        width: 57px;
+        height: 1px;
+        background: #e6eaed; }
+  .timeline-box .timeline {
+    padding-bottom: 10px;
+    background-color: #22424c;
+    -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15); }
+    .timeline-box .timeline .time-grid {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 50px;
+      padding: 10px 20px; }
+      .timeline-box .timeline .time-grid div {
+        width: 70px;
+        height: 16px;
+        font-family: 'Futura PT Book';
+        font-size: 12.1px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 0.6px;
+        text-align: left;
+        color: #ccc0aa;
+        padding: 0px 5px;
+        border-left: 2px solid rgba(255, 255, 255, 0.2); }
+    .timeline-box .timeline .content-grid {
+      padding: 0 30px 0 20px; }
+      .timeline-box .timeline .content-grid .content-grid-inner {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 20px; }
+      .timeline-box .timeline .content-grid .item {
+        position: relative;
+        height: 200px; }
+        .timeline-box .timeline .content-grid .item.item-inline {
+          height: 80px;
+          margin-left: 10px; }
+          .timeline-box .timeline .content-grid .item.item-inline .control-area {
+            height: 80px;
+            background: #37829f;
+            top: 0; }
+            .timeline-box .timeline .content-grid .item.item-inline .control-area.narrow .name {
+              margin-left: 10px; }
+            .timeline-box .timeline .content-grid .item.item-inline .control-area .rect {
+              height: 80px;
+              width: 120px; }
+            .timeline-box .timeline .content-grid .item.item-inline .control-area .name {
+              margin-left: 20px;
+              position: relative;
+              top: 0; }
+        .timeline-box .timeline .content-grid .item .control-area {
+          position: absolute;
+          top: 75px;
+          width: 100%;
+          z-index: 1;
+          background-color: #ebf4f7;
+          -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+                  box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+          height: 60px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .timeline-box .timeline .content-grid .item .control-area .note {
+            font-size: 20px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 0.3;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #05354c;
+            line-height: 60px;
+            padding-left: 200px; }
+          .timeline-box .timeline .content-grid .item .control-area .btn-create {
+            margin-left: 20px;
+            background: #3890b3;
+            font-size: 16px;
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 0.4px;
+            color: #fff;
+            border: 2px solid #3890b3; }
+        .timeline-box .timeline .content-grid .item .image {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          z-index: 2;
+          left: 20px; }
+          .timeline-box .timeline .content-grid .item .image img {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            -webkit-border-radius: 75px;
+                    border-radius: 75px;
+            background-color: #000000;
+            -webkit-box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+                    box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+            border: solid 2px #000000; }
+          .timeline-box .timeline .content-grid .item .image .circle {
+            background: #22424c;
+            width: 150px;
+            height: 150px;
+            -webkit-border-radius: 75px;
+                    border-radius: 75px;
+            border: solid 2px #ebf4f7;
+            -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+                    box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .timeline-box .timeline .content-grid .item .image .circle .inner {
+              width: 78px;
+              height: 78px;
+              -webkit-border-radius: 39px;
+                      border-radius: 39px;
+              border: 1px solid #e18225;
+              display: block; }
+        .timeline-box .timeline .content-grid .item .name {
+          position: absolute;
+          bottom: 20px;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          color: #ffffff;
+          text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15); }
+    .timeline-box .timeline .scroll-path {
+      height: 4px;
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+      background-color: #9baeb7;
+      -webkit-box-shadow: 2.8px 10.6px 15px 0 rgba(0, 0, 0, 0.15);
+              box-shadow: 2.8px 10.6px 15px 0 rgba(0, 0, 0, 0.15);
+      width: 100%; }
