@@ -1,0 +1,376 @@
+@import "bourbon"
+@import "vars.sass"
+
+.container
+  width: 1366px
+  margin: auto
+.btn
+  border-radius: 20px
+  text-align: center
+  border: solid 2px #ebf4f7
+  padding: 0 25px
+  display: inline-block
+  height: 40px
+  line-height: 36px
+  font-family: 'Futura Lt BT'
+  cursor: pointer
+  text-decoration: none
+  &.small
+    padding: 0 15px
+    height: 20px
+    line-height: 18px  
+body
+
+  background-image: url(../img/bg/library.jpg)
+  background-size: cover
+  font-family: Futura
+a
+  text-decoration: none
+header
+  padding: 29px 50px 
+  .container
+    display: flex 
+    .breadcrumbs-box
+      text-transform: uppercase
+      width: 457px
+      padding: 12px 12px
+      .breadcrumbs
+        display: flex
+        a, span
+          font-size: 14px
+          font-weight: 500
+          font-style: normal
+          font-stretch: normal
+          line-height: 0.43
+          letter-spacing: 0.7px
+          color: rgba(255, 255, 255, 0.5)
+        a:after
+          content: '>'
+          padding: 0 5px
+        span
+          color: #fff
+    .heading-box
+      text-align: center
+      .title
+        font-size: 30px
+        font-weight: 500
+        font-style: normal
+        font-stretch: normal
+        line-height: 0.2
+        letter-spacing: 3px
+        color: #ffffff
+        text-shadow: 1px 3.9px 15px rgba(0, 0, 0, 0.15)      
+      .subtitle
+        text-transform: uppercase
+        margin-top: 10px
+        margin-bottom: 43px
+        font-size: 14px
+        font-weight: 500
+        font-style: normal
+        font-stretch: normal
+        letter-spacing: 0.7px
+        color: rgba(255, 255, 255, 0.5)
+      .folder
+        img
+          width: 60px
+          height: 60px  
+    .buttons-box
+      margin-left: auto
+      .btn
+        background-color: #cc6550
+        border: solid 2px #e02a24
+        color: #fff
+      .history
+        text-align: right
+        color: #fff  
+        font-size: 14px
+        etter-spacing: 1.4px
+        text-transform: uppercase
+        margin-top: 22px
+.controls-box
+  .container
+    display: flex
+    .icons-box
+      width: 165px
+      padding-right: 10px
+      padding-top: 4px
+      .icon
+        font-weight: 900
+        line-height: 1.43
+        letter-spacing: 0.7px
+        text-align: right
+        color: #f2f5f6
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
+        text-transform: uppercase
+        font-size: 14px
+        i 
+          font-size: 8px
+          line-height: 14px
+          width: 14px
+          height: 14px
+          display: inline-block
+          position: relative
+          top: -2px
+    .details-box
+      background-color: #22424c
+      box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)
+      padding: 6px
+      width: 100%
+      &.empty
+        display: flex
+        .title
+          font-size: 16px
+          font-weight: 500
+          letter-spacing: 0.4px
+          color: rgba(235, 244, 247, 0.5)
+          line-height: 30px
+      .icon-add
+        color: #e18225
+        width: 15px
+        height: 15px
+        font-size: 15px
+        margin: 0 20px
+      .inner 
+        background: #3482a0
+        height: 36px
+        line-height: 36px
+        padding: 0 6px
+        box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)
+        letter-spacing: 0.4px
+        color: #ffffff
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
+        text-transform: lowercase
+.timeline-box
+  margin-top: 42px
+  .triggered-grid
+    display: flex
+    .item
+      background: #22424c
+      margin-right: 20px
+      width: 170px
+      height: 170px
+      padding: 2px
+      &.item-addme
+        text-align: center
+        height: 29px
+        font-family: Futura PT Book
+        font-size: 14px
+        line-height: 1.29
+        letter-spacing: 0.7px
+        text-align: center
+        color: #99d8d6
+        text-transform: uppercase
+        i
+          width: 78px
+          height: 78px
+          border-radius: 39px
+          border: 1px solid #99d8d6
+          line-height: 78px
+          display: block
+          margin: 20px auto
+
+      .item-wrap
+        border: 1px solid #d99041
+        padding: 5px
+        height: 166px
+        position: relative
+        .img
+          width: 120px
+          height: 60px
+          background-color: #ccc0aa
+          box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3)
+        .num  
+          width: 5px
+          height: 14px
+          font-family: 'Futura PT'
+          font-size: 20px
+          font-weight: 900
+          text-align: center
+          letter-spacing: 1px;
+          color: #e6eaed 
+          position: absolute
+          top: 25px
+          right: 20px
+        .name
+          font-family: 'Futura PT Book'
+          font-size: 14px
+          line-height: 1.29;
+          letter-spacing: 0.7px
+          color: #ffffff
+          text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.3)  
+          padding-top: 5px
+          padding-botom: 9px
+        .info
+          div
+            font-family: 'Futura PT Book'
+            font-size: 12px
+            line-height: 1.7
+            letter-spacing: 1.8px
+            color: #fff
+            span
+              font-family: 'Futura PT Book'
+              font-size: 12px
+              line-height: 1.5
+              letter-spacing: 1.8px
+              text-align: left
+              color: #60a6c2  
+              text-transform: uppercase
+        .icons
+          height: 20px
+          line-height: 20px
+          .notes
+            font-family: 'Futura PT Book'
+            font-size: 12px
+            letter-spacing: 1.2px
+            color: #ebf4f7
+            text-shadow: 0.3px 1px 2px rgba(0, 0, 0, 0.3)      
+            line-height: 20px
+
+          
+  .timeline-box-wrap
+    width: 1250px
+    margin: auto
+  .title
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.1px
+    text-align: left
+    color: #f2f5f6
+    text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
+    text-transform: uppercase
+    margin-left: 30px
+    margin-bottom: 8px
+  .container
+    display: flex  
+    .volume
+      float: right
+      display: flex
+      margin-left: auto
+      .track 
+        width: 57px
+        height: 1px
+        background: #e6eaed  
+  .timeline
+    padding-bottom: 10px
+    background-color: #22424c
+    box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)  
+    .time-grid
+      display: flex
+      height: 50px
+      padding: 10px 20px
+      div
+        width: 70px
+        height: 16px
+        font-family: 'Futura PT Book'
+        font-size: 12.1px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        letter-spacing: 0.6px
+        text-align: left
+        color: #ccc0aa     
+        padding: 0px 5px
+        border-left: 2px solid rgba(255, 255, 255, .2) 
+    .content-grid
+      padding: 0 30px 0 20px
+      .content-grid-inner
+        display: flex
+        padding-bottom: 20px
+      .item
+        position: relative
+        height: 200px
+        &.item-inline
+          height: 80px
+          margin-left: 10px
+          .control-area
+            height: 80px
+            background: #37829f
+            top: 0
+            &.narrow
+              .name
+                margin-left: 10px
+            .rect
+              height: 80px
+              width: 120px
+            .name
+              margin-left: 20px
+              position: relative
+              top: 0
+
+        .control-area
+          position: absolute
+          top: 75px
+          width: 100%
+          z-index: 1
+          background-color: #ebf4f7
+          box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)
+          height: 60px
+          display: flex
+          align-items: center
+          .note
+            font-size: 20px
+            font-weight: 500
+            font-style: normal
+            font-stretch: normal
+            line-height: 0.3
+            letter-spacing: 0.5px
+            text-align: left
+            color: #05354c
+            line-height: 60px
+            padding-left: 200px
+          .btn-create
+            margin-left: 20px
+            background: #3890b3
+            font-size: 16px
+            font-weight: 900
+            font-style: normal
+            font-stretch: normal
+            letter-spacing: 0.4px
+            color: #fff
+            border: 2px solid #3890b3 
+        .image
+          width: 150px
+          height: 150px
+          position: absolute
+          z-index: 2
+          left: 20px
+          img
+            width: 150px
+            height: 150px
+            display: inline-block
+            border-radius: 75px
+            background-color: #000000
+            box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)
+            border: solid 2px #000000
+          .circle
+            background: #22424c  
+            width: 150px
+            height: 150px
+            border-radius: 75px
+            border: solid 2px #ebf4f7
+            box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)
+            display: flex
+            justify-content: center
+            align-items: center
+            .inner
+              width: 78px
+              height: 78px
+              border-radius: 39px
+              border: 1px solid #e18225
+              display: block
+
+        .name
+          position: absolute
+          bottom: 20px
+          font-weight: 500
+          letter-spacing: 0.4px
+          color: #ffffff
+          text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
+     
+
+    .scroll-path
+      height: 4px
+      border-radius: 2px
+      background-color: #9baeb7
+      box-shadow: 2.8px 10.6px 15px 0 rgba(0, 0, 0, 0.15)
+      width: 100%
