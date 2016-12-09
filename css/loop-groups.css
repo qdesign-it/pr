@@ -151,6 +151,7 @@ header {
     display: flex;
     padding: 23px 0; }
     .content .upload-box .container .hide {
+      font-family: Futura;
       font-size: 10px;
       font-weight: 500;
       font-style: normal;
@@ -159,6 +160,13 @@ header {
       letter-spacing: 1.5px;
       color: #ffffff;
       text-transform: uppercase; }
+      .content .upload-box .container .hide i {
+        display: block;
+        width: 23px;
+        height: 22px;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: -7px; }
     .content .upload-box .container .img {
       margin-left: 169px;
       width: 30px;
@@ -235,6 +243,9 @@ header {
     float: left; }
     .content .sort-box .sort-links .sort-link.active {
       color: #ffe03f; }
+      .content .sort-box .sort-links .sort-link.active:after {
+        content: '\e900';
+        font-family: 'icomoon'; }
     .content .sort-box .sort-links .sort-link:last-child {
       margin-left: 200px; }
   .content .sort-box .sort-icons {
