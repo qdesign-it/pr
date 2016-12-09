@@ -142,8 +142,12 @@ header
         text-transform: lowercase
 .timeline-box
   margin-top: 42px
+  &.library-control
+    background: url(../img/controls/library-control.png) no-repeat 30px 100px
+
   .triggered-grid
     display: flex
+    margin-bottom: 30px
     .item
       background: #22424c
       margin-right: 20px
@@ -151,15 +155,18 @@ header
       height: 170px
       padding: 2px
       &.item-addme
+        background: #0e8385
         text-align: center
-        height: 29px
-        font-family: Futura PT Book
+        font-family: 'Futura PT Book'
         font-size: 14px
         line-height: 1.29
         letter-spacing: 0.7px
         text-align: center
         color: #99d8d6
         text-transform: uppercase
+        box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3)
+        .item-wrap
+          border: 1px solid #fff
         i
           width: 78px
           height: 78px
@@ -179,6 +186,8 @@ header
           height: 60px
           background-color: #ccc0aa
           box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3)
+          overflow: hidden
+          background-size: cover
         .num  
           width: 5px
           height: 14px
@@ -230,6 +239,8 @@ header
   .timeline-box-wrap
     width: 1250px
     margin: auto
+    .title
+      margin-left: 0
   .title
     font-size: 14px;
     font-weight: 500;
