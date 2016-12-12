@@ -83,7 +83,7 @@ body {
 
 label {
   display: inline-block;
-  width: 155px;
+  width: 160px;
   height: 13px;
   font-size: 30px;
   font-weight: 500;
@@ -91,7 +91,8 @@ label {
   text-align: right;
   color: #ffffff;
   margin-right: 20px;
-  opacity: 0.5; }
+  opacity: 0.5;
+  font-weight: 900; }
 
 input {
   background: transparent;

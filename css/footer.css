@@ -3,33 +3,90 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40px; }
+  height: 30px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.35)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.35) 10%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.35) 10%, rgba(255, 255, 255, 0) 100%);
+  z-index: 999; }
   footer .container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
-    footer .container div div {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .container > div {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 auto;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
+      text-align: center;
+      height: 30px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
       font-size: 12px;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 900;
       letter-spacing: 0.7px;
       color: #ffffff;
-      margin-top: 10px;
-      text-shadow: 1px 1.9px 2px rgba(0, 0, 0, 0.15); }
+      text-shadow: 1px 1.9px 2px rgba(0, 0, 0, 0.15);
+      line-height: 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0 20px; }
+      footer .container > div > * {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto; }
+      footer .container > div i {
+        display: inline-block;
+        width: 32px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 25px;
+        background: #fff;
+        margin: 0 10px 0 0;
+        text-shadow: 1px 1.9px 2px rgba(0, 0, 0, 0.15); }
+      footer .container > div div {
+        display: inline-block;
+        line-height: 30px;
+        height: 30px; }
+      footer .container > div.active {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #327996), to(rgba(50, 121, 150, 0.8)));
+        background: -webkit-linear-gradient(bottom, #327996 10%, rgba(50, 121, 150, 0.8) 100%);
+        background: linear-gradient(to top, #327996 10%, rgba(50, 121, 150, 0.8) 100%);
+        color: #f3d93f;
+        -webkit-border-radius: 10px 10px 0 0;
+                border-radius: 10px 10px 0 0; }
     footer .container .logo {
-      width: 450px; }
-    footer .container .library {
-      width: 180px; }
-    footer .container .scheduler {
-      width: 220px;
-      text-align: center; }
-    footer .container .dashboard {
-      width: 260px; }
-    footer .container .settings {
-      width: 160px;
-      text-align: right;
-      padding-right: 30px; }
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+      text-align: left;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 400px;
+          -ms-flex: 0 1 400px;
+              flex: 0 1 400px; }
+    footer .container .setitngs i {
+      margin-left: 10px; }
     footer .container .help {
-      margin-left: auto;
-      text-align: right; }
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      footer .container .help i {
+        margin-left: 10px; }

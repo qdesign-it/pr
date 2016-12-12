@@ -22,7 +22,8 @@
 body {
   background-image: url(../img/bg/library.jpg);
   background-size: cover;
-  font-family: Futura; }
+  font-family: Futura;
+  overflow: hidden; }
 
 a {
   text-decoration: none; }
@@ -33,66 +34,95 @@ header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     header .container .breadcrumbs-box {
       text-transform: uppercase;
-      width: 457px;
-      padding: 12px 12px; }
+      padding: 0 12px;
+      margin-top: 10px; }
       header .container .breadcrumbs-box .breadcrumbs {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         header .container .breadcrumbs-box .breadcrumbs a, header .container .breadcrumbs-box .breadcrumbs span {
-          font-size: 14px;
-          font-weight: 500;
+          font-size: 13px;
+          font-weight: 900;
           font-style: normal;
           font-stretch: normal;
           line-height: 0.43;
           letter-spacing: 0.7px;
-          color: rgba(255, 255, 255, 0.5); }
+          color: rgba(255, 255, 255, 0.5);
+          text-shadow: 1px 1.9px 15px rgba(0, 0, 0, 0.15); }
         header .container .breadcrumbs-box .breadcrumbs a:after {
-          content: '>';
-          padding: 0 5px; }
+          content: '\e911';
+          padding: 0 5px;
+          font-family: icomoon;
+          font-weight: 200; }
         header .container .breadcrumbs-box .breadcrumbs span {
           color: #fff; }
     header .container .heading-box {
       text-align: center; }
       header .container .heading-box .title {
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 900;
         font-style: normal;
         font-stretch: normal;
-        line-height: 0.2;
         letter-spacing: 3px;
         color: #ffffff;
         text-shadow: 1px 3.9px 15px rgba(0, 0, 0, 0.15); }
       header .container .heading-box .subtitle {
         text-transform: uppercase;
         margin-top: 10px;
-        margin-bottom: 43px;
+        margin-bottom: 20px;
         font-size: 14px;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
         letter-spacing: 0.7px;
-        color: rgba(255, 255, 255, 0.5); }
+        color: rgba(255, 255, 255, 0.5);
+        text-shadow: 1px 1.9px 15px rgba(0, 0, 0, 0.15); }
+        header .container .heading-box .subtitle + .title {
+          margin-top: -15px;
+          margin-bottom: 40px; }
+      header .container .heading-box .icon-settings {
+        opacity: 0.5;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        background: #fff;
+        display: inline-block; }
       header .container .heading-box .folder img {
         width: 60px;
         height: 60px; }
-    header .container .buttons-box {
-      margin-left: auto; }
-      header .container .buttons-box .btn {
-        background-color: #cc6550;
-        border: solid 2px #e02a24;
-        color: #fff; }
-      header .container .buttons-box .history {
-        text-align: right;
-        color: #fff;
-        font-size: 14px;
-        etter-spacing: 1.4px;
-        text-transform: uppercase;
-        margin-top: 22px; }
+    header .container .buttons-box .btn {
+      background-color: #cc6550;
+      border: solid 2px #e02a24;
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-size: 90%; }
+    header .container .buttons-box .history {
+      text-align: right;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-top: 22px;
+      line-height: 30px;
+      text-shadow: 1px 1.9px 15px rgba(0, 0, 0, 0.15);
+      font-weight: 900;
+      opacity: 0.8; }
+    header .container .buttons-box i {
+      width: 10px;
+      height: 30px;
+      display: inline-block;
+      background: #fff;
+      float: right;
+      margin-left: 10px; }
 
 .controls-box .container {
   display: -webkit-box;
@@ -113,7 +143,8 @@ header {
       text-transform: uppercase;
       font-size: 14px; }
       .controls-box .container .icons-box .icon i {
-        font-size: 8px;
+        font-size: 12px;
+        opacity: .9;
         line-height: 14px;
         width: 14px;
         height: 14px;
@@ -137,12 +168,11 @@ header {
         letter-spacing: 0.4px;
         color: rgba(235, 244, 247, 0.5);
         line-height: 30px; }
-    .controls-box .container .details-box .icon-add {
+    .controls-box .container .details-box .icon-plus {
       color: #e18225;
-      width: 15px;
-      height: 15px;
+      line-height: 30px;
       font-size: 15px;
-      margin: 0 20px; }
+      margin: 0 15px; }
     .controls-box .container .details-box .inner {
       background: #3482a0;
       height: 36px;
@@ -157,8 +187,17 @@ header {
 
 .timeline-box {
   margin-top: 42px; }
-  .timeline-box.library-control {
-    background: url(../img/controls/library-control.png) no-repeat 30px 100px; }
+  .timeline-box.library-control .control {
+    position: absolute;
+    width: 98px;
+    height: 151px;
+    left: -109px;
+    top: 223px;
+    background: url(../img/controls/library-control.png) no-repeat; }
+  .timeline-box.library-control .scroll {
+    width: 1200px !important; }
+  .timeline-box.library-control .container {
+    width: 1250px; }
   .timeline-box .triggered-grid {
     display: -webkit-box;
     display: -webkit-flex;
@@ -182,7 +221,12 @@ header {
         color: #99d8d6;
         text-transform: uppercase;
         -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3);
-                box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3); }
+                box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        padding: 4px;
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.3); }
+        .timeline-box .triggered-grid .item.item-addme .item-wrap {
+          height: 162px; }
         .timeline-box .triggered-grid .item.item-addme .item-wrap {
           border: 1px solid #fff; }
         .timeline-box .triggered-grid .item.item-addme i {
@@ -193,7 +237,8 @@ header {
           border: 1px solid #99d8d6;
           line-height: 78px;
           display: block;
-          margin: 20px auto; }
+          margin: 20px auto;
+          font-size: 35px; }
       .timeline-box .triggered-grid .item .item-wrap {
         border: 1px solid #d99041;
         padding: 5px;
@@ -241,7 +286,8 @@ header {
             letter-spacing: 1.8px;
             text-align: left;
             color: #60a6c2;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.3); }
         .timeline-box .triggered-grid .item .item-wrap .icons {
           height: 20px;
           line-height: 20px; }
@@ -254,40 +300,63 @@ header {
             line-height: 20px; }
   .timeline-box .timeline-box-wrap {
     width: 1250px;
-    margin: auto; }
+    margin: auto;
+    position: relative; }
     .timeline-box .timeline-box-wrap .title {
       margin-left: 0; }
   .timeline-box .title {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 900;
     letter-spacing: 2.1px;
-    text-align: left;
+    line-height: 34px;
     color: #f2f5f6;
     text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
-    margin-left: 30px;
-    margin-bottom: 8px; }
+    margin-left: 30px; }
   .timeline-box .container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .timeline-box .container .volume {
-      float: right;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-left: auto; }
       .timeline-box .container .volume .track {
-        width: 57px;
+        width: 50px;
         height: 1px;
-        background: #e6eaed; }
+        background: #e6eaed;
+        margin: 0 7px;
+        position: relative; }
+        .timeline-box .container .volume .track i {
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background: #e6eaed;
+          -webkit-border-radius: 3px;
+                  border-radius: 3px;
+          left: 20px;
+          top: -2px; }
+      .timeline-box .container .volume i {
+        color: #e6eaed;
+        cursor: pointer; }
   .timeline-box .timeline {
     padding-bottom: 10px;
     background-color: #22424c;
     -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15); }
+            box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+    position: absolute;
+    width: 100%; }
     .timeline-box .timeline .time-grid {
       display: -webkit-box;
       display: -webkit-flex;
@@ -322,12 +391,15 @@ header {
         .timeline-box .timeline .content-grid .item.item-inline {
           height: 80px;
           margin-left: 10px; }
+          .timeline-box .timeline .content-grid .item.item-inline:first-child {
+            margin-left: 0; }
           .timeline-box .timeline .content-grid .item.item-inline .control-area {
             height: 80px;
             background: #37829f;
             top: 0; }
             .timeline-box .timeline .content-grid .item.item-inline .control-area.narrow .name {
-              margin-left: 10px; }
+              margin-left: 10px;
+              padding-right: 10px; }
             .timeline-box .timeline .content-grid .item.item-inline .control-area .rect {
               height: 80px;
               width: 120px; }
@@ -352,6 +424,14 @@ header {
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center; }
+          .timeline-box .timeline .content-grid .item .control-area i {
+            width: 8px;
+            height: 25px;
+            background: #fff;
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            right: 5px; }
           .timeline-box .timeline .content-grid .item .control-area .note {
             font-size: 20px;
             font-weight: 500;
@@ -415,8 +495,16 @@ header {
               height: 78px;
               -webkit-border-radius: 39px;
                       border-radius: 39px;
-              border: 1px solid #e18225;
-              display: block; }
+              border: 2px solid #e18225;
+              display: block;
+              text-align: center;
+              -webkit-box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15);
+                      box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15); }
+              .timeline-box .timeline .content-grid .item .image .circle .inner i {
+                font-size: 40px;
+                color: #e18225;
+                line-height: 78px;
+                text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15); }
         .timeline-box .timeline .content-grid .item .name {
           position: absolute;
           bottom: 20px;
@@ -424,11 +512,20 @@ header {
           letter-spacing: 0.4px;
           color: #ffffff;
           text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15); }
+    .timeline-box .timeline .scroll {
+      background: #4e7181;
+      height: 8px;
+      padding: 2px;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      position: relative; }
     .timeline-box .timeline .scroll-path {
+      position: absolute;
       height: 4px;
       -webkit-border-radius: 2px;
               border-radius: 2px;
-      background-color: #9baeb7;
+      background: #9baeb7;
       -webkit-box-shadow: 2.8px 10.6px 15px 0 rgba(0, 0, 0, 0.15);
               box-shadow: 2.8px 10.6px 15px 0 rgba(0, 0, 0, 0.15);
-      width: 100%; }
+      width: 400px;
+      left: 100px; }

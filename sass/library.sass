@@ -20,73 +20,100 @@
     height: 20px
     line-height: 18px  
 body
-
   background-image: url(../img/bg/library.jpg)
   background-size: cover
   font-family: Futura
+  overflow: hidden
 a
   text-decoration: none
 header
   padding: 29px 50px 
   .container
     display: flex 
+    justify-content: space-between
     .breadcrumbs-box
       text-transform: uppercase
-      width: 457px
-      padding: 12px 12px
+      padding: 0 12px
+      margin-top: 10px
       .breadcrumbs
         display: flex
         a, span
-          font-size: 14px
-          font-weight: 500
+          font-size: 13px
+          font-weight: 900
           font-style: normal
           font-stretch: normal
           line-height: 0.43
           letter-spacing: 0.7px
           color: rgba(255, 255, 255, 0.5)
+          text-shadow: 1px 1.9px 15px rgba(0, 0, 0, 0.15)
         a:after
-          content: '>'
+          content: '\e911'
           padding: 0 5px
+          font-family: icomoon
+          font-weight: 200
         span
           color: #fff
     .heading-box
       text-align: center
       .title
         font-size: 30px
-        font-weight: 500
+        font-weight: 900
         font-style: normal
         font-stretch: normal
-        line-height: 0.2
         letter-spacing: 3px
         color: #ffffff
         text-shadow: 1px 3.9px 15px rgba(0, 0, 0, 0.15)      
       .subtitle
         text-transform: uppercase
         margin-top: 10px
-        margin-bottom: 43px
+        margin-bottom: 20px
         font-size: 14px
         font-weight: 500
         font-style: normal
         font-stretch: normal
         letter-spacing: 0.7px
         color: rgba(255, 255, 255, 0.5)
+        text-shadow: 1px 1.9px 15px rgba(0, 0, 0, 0.15);
+        + .title
+          margin-top: -15px
+          margin-bottom: 40px
+      .icon-settings
+        opacity: 0.5
+        width: 18px
+        height: 18px
+        line-height: 18px
+        background: #fff   
+        display: inline-block 
       .folder
         img
           width: 60px
           height: 60px  
     .buttons-box
-      margin-left: auto
       .btn
         background-color: #cc6550
         border: solid 2px #e02a24
         color: #fff
+        font-weight: 900
+        letter-spacing: 1px
+        font-size: 90%
       .history
         text-align: right
         color: #fff  
         font-size: 14px
-        etter-spacing: 1.4px
+        letter-spacing: 1.4px
         text-transform: uppercase
         margin-top: 22px
+        line-height: 30px
+        text-shadow: 1px 1.9px 15px rgba(0, 0, 0, 0.15);
+        font-weight: 900
+        opacity: 0.8
+      i
+        width: 10px
+        height: 30px
+        display: inline-block
+        background: #fff
+        float: right
+        margin-left: 10px
 .controls-box
   .container
     display: flex
@@ -104,7 +131,8 @@ header
         text-transform: uppercase
         font-size: 14px
         i 
-          font-size: 8px
+          font-size: 12px
+          opacity: .9
           line-height: 14px
           width: 14px
           height: 14px
@@ -124,12 +152,11 @@ header
           letter-spacing: 0.4px
           color: rgba(235, 244, 247, 0.5)
           line-height: 30px
-      .icon-add
+      .icon-plus
         color: #e18225
-        width: 15px
-        height: 15px
+        line-height: 30px
         font-size: 15px
-        margin: 0 20px
+        margin: 0 15px
       .inner 
         background: #3482a0
         height: 36px
@@ -143,8 +170,17 @@ header
 .timeline-box
   margin-top: 42px
   &.library-control
-    background: url(../img/controls/library-control.png) no-repeat 30px 100px
-
+    .control
+      position: absolute
+      width: 98px
+      height: 151px
+      left: -109px
+      top: 223px
+      background: url(../img/controls/library-control.png) no-repeat
+    .scroll
+      width: 1200px!important  
+    .container
+      width: 1250px
   .triggered-grid
     display: flex
     margin-bottom: 30px
@@ -165,6 +201,11 @@ header
         color: #99d8d6
         text-transform: uppercase
         box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.3)
+        cursor: pointer
+        padding: 4px
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.3)  
+        .item-wrap
+          height: 162px
         .item-wrap
           border: 1px solid #fff
         i
@@ -175,7 +216,7 @@ header
           line-height: 78px
           display: block
           margin: 20px auto
-
+          font-size: 35px
       .item-wrap
         border: 1px solid #d99041
         padding: 5px
@@ -224,6 +265,7 @@ header
               text-align: left
               color: #60a6c2  
               text-transform: uppercase
+              text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.3)  
         .icons
           height: 20px
           line-height: 20px
@@ -239,32 +281,49 @@ header
   .timeline-box-wrap
     width: 1250px
     margin: auto
+    position: relative
     .title
       margin-left: 0
   .title
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 900;
     letter-spacing: 2.1px
-    text-align: left
+    line-height: 34px
     color: #f2f5f6
     text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
     text-transform: uppercase
     margin-left: 30px
-    margin-bottom: 8px
   .container
     display: flex  
+    align-items: center
     .volume
-      float: right
       display: flex
+      align-items: center
       margin-left: auto
       .track 
-        width: 57px
+        width: 50px
         height: 1px
         background: #e6eaed  
+        margin: 0 7px
+        position: relative
+        i
+          position: absolute
+          width: 6px
+          height: 6px
+          background: #e6eaed  
+          border-radius: 3px
+          left: 20px
+          top: -2px
+
+      i
+        color: #e6eaed  
+        cursor: pointer
   .timeline
     padding-bottom: 10px
     background-color: #22424c
-    box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)  
+    box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15) 
+    position: absolute 
+    width: 100%
     .time-grid
       display: flex
       height: 50px
@@ -293,6 +352,8 @@ header
         &.item-inline
           height: 80px
           margin-left: 10px
+          &:first-child
+            margin-left: 0
           .control-area
             height: 80px
             background: #37829f
@@ -300,6 +361,7 @@ header
             &.narrow
               .name
                 margin-left: 10px
+                padding-right: 10px
             .rect
               height: 80px
               width: 120px
@@ -307,6 +369,7 @@ header
               margin-left: 20px
               position: relative
               top: 0
+
 
         .control-area
           position: absolute
@@ -318,6 +381,15 @@ header
           height: 60px
           display: flex
           align-items: center
+          i
+            width: 8px
+            height: 25px
+            background: #fff
+            display: inline-block
+            position: absolute
+            top: 5px
+            right: 5px
+
           .note
             font-size: 20px
             font-weight: 500
@@ -367,8 +439,15 @@ header
               width: 78px
               height: 78px
               border-radius: 39px
-              border: 1px solid #e18225
+              border: 2px solid #e18225
               display: block
+              text-align: center
+              box-shadow: inset 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.15)
+              i
+                font-size: 40px
+                color: #e18225
+                line-height: 78px
+                text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
 
         .name
           position: absolute
@@ -378,10 +457,18 @@ header
           color: #ffffff
           text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)
      
-
+    .scroll
+      background: #4e7181
+      height: 8px
+      padding: 2px
+      border-radius: 4px
+      position: relative
     .scroll-path
+      position: absolute
       height: 4px
       border-radius: 2px
-      background-color: #9baeb7
+      background: #9baeb7
       box-shadow: 2.8px 10.6px 15px 0 rgba(0, 0, 0, 0.15)
-      width: 100%
+      width: 400px
+      left: 100px
+

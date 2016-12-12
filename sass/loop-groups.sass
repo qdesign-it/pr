@@ -1,6 +1,10 @@
 @import "bourbon"
 @import "vars.sass"
-
+.wrap
+  display: flex
+  flex-wrap: wrap
+  > *
+    flex: 1 1 auto
 .container
   width: 1366px
   margin: auto
@@ -27,26 +31,23 @@ header
   background-size: cover
   border-bottom: 2px solid $yellow
   .header-container
-    padding: 20.5px 29px
+    padding: 10px 30px
     display: flex
     align-items: center
-    justify-content: flex-start
-    align-content: stretch
+    justify-content: space-between
+    > *
+      flex: 1 1 200px
   .heading-box
-    width: 81px
     font-family: 'Futura PT'
     font-size: 20px
     font-weight: 900
     font-style: normal
     font-stretch: normal
-    line-height: 0.3
     letter-spacing: 1px
     text-align: left
     color: #ffffff
     text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)  
-    margin-right: 100px
   .close-box
-    width: 208px
     .close
     i 
       cursor: pointer
@@ -58,28 +59,26 @@ header
       font-size: 60px 
       color: #fff
   .controls-box
-    padding-top: 7px
-    margin-left: auto
+    flex: 1 1 62px
+    margin-left: 120px
+    text-align: center
     .drag-drop
       height: 25px
       line-height: 25px
       font-size: 12px
-      font-weight: 500
+      font-weight: 900
       font-style: normal
       font-stretch: normal
       line-height: 25px
       letter-spacing: 0px
       color: rgba(255, 255, 255, 0.75)
-      position: relative
-      padding-left: 32px
       cursor: pointer
-      i
-        position: absolute
-        top: 0
-        left: 0
+      i 
+        display: block
         width: 25px
         height: 25px
         font-size: 25px
+        margin: auto
     .btn
       opacity: 0.5
       border-radius: 10px
@@ -90,10 +89,8 @@ header
       font-style: normal
       font-stretch: normal
       letter-spacing: 0.2px
-      margin-left: 33px
+      margin-top: 22px
   .title-box
-    padding-top: 5px
-    width: 262px
     &.gray
       .title, .subtitle
         color: #cdd7db
@@ -137,6 +134,7 @@ header
     .container
       display: flex
       padding: 23px 0
+      align-items: center
       .hide
         font-family: Futura
         font-size: 10px
@@ -147,6 +145,7 @@ header
         letter-spacing: 1.5px
         color: #ffffff
         text-transform: uppercase
+        cursor: pointer
         i
           display: block
           width: 23px
@@ -158,10 +157,13 @@ header
         margin-left: 169px
         width: 30px
         height: 30px
-        margin-right: 30px
+        margin-right: 27px
+        background: #fff
+        cursor: pointer
       .track
-        width: 870px
         height: 50px
+        flex-grow: 1
+        max-width: 850px
         position: relative
         background: #163644
         .done
@@ -173,26 +175,26 @@ header
           background: #009691
           z-index: 1
         .tract-info
+          height: 50px
           position: relative
           z-index: 2
           display: flex
-          width: 100%
           align-items: center
           color: #fff
-          height: 50px
           .icon-close
-            width: 25px
-            height: 25px
-            line-height: 25px
-            margin: 0 25px
+            margin: 0 15px
+            cursor: pointer
+            font-size: 27px
           .title
             font-size: 16px
-            font-weight: 500
+            font-weight: 900
             letter-spacing: 0.8px
             color: #ffffff  
           .size
             margin-left: auto
-            margin-right: 20px
+            margin-right: 15px
+            font-weight: 900
+            opacity: .3
 
   .sort-box
     margin-bottom: 20px
@@ -200,7 +202,8 @@ header
     border-bottom: 2px solid #9bc7d9
     position: relative
     .container-content
-      padding: 20px 60px 40px 120px
+      display: flex
+      padding: 10px 0
     .create-new
       position: absolute
       bottom: -20px
@@ -215,29 +218,32 @@ header
       letter-spacing: 0.4px
       color: #fff
       border: 2px solid #ebf4f7
-    .sort-links
-      .sort-link
-        color: #afa4ad  
-        font-size: 14px
-        letter-spacing: 0.4px
-        cursor: pointer
-        display: inline-block
-        float: left
-        &.active
-          color: $yellow
-          &:after
-            content: '\e900' 
-            font-family: 'icomoon'
-        &:last-child
-          margin-left: 200px  
+    .sort-link
+      flex: 0 1 80px
+      color: #afa4ad  
+      font-size: 14px
+      letter-spacing: 0.4px
+      cursor: pointer
+      display: inline-block
+      text-align: center
+      &.first
+        margin-left: 92px
+      &.last
+        text-align: left
+      &.active
+        color: $yellow
+        &:after
+          content: '\e900' 
+          font-family: 'icomoon'
+    .space-box
+      flex: 0 1 215px      
     .sort-icons
-      float: right
+      margin-left: auto
       .sort-icon
         width: 25px
         font-size: 22px
         height: 22px
         display: inline-block
-        margin-left: 20px
         color: #c3dfe3
         cursor: pointer
         &.active
@@ -250,20 +256,23 @@ header
         background: #507181
       .container
         display: flex  
-      .trash-box
-        width: 156px
-        padding: 30px 0 0 60px
-        .trash
-          cursor: pointer
+        align-items: center
+        > *
+          flex: 0 1 80px
+          justify-content: center
+      .icon-box
+        text-align: center
         i 
+          cursor: pointer
           display: inline-block
-          width: 42px
-          height: 42px
-          font-size: 42px
+          width: 30px
+          height: 30px
+          font-size: 30px
           color: #fff
+          background: #fff
       .number-box
-        width: 102px
-        padding-top: 44px
+        text-align: center  
+        margin-left: 95px
         .number
           opacity: 0.5
           font-family: 'Futura PT Book'
@@ -274,11 +283,11 @@ header
           letter-spacing: 0.7px
           color: rgba(255, 255, 255, 0.5)
       .image-box
-        width: 198px
+        flex: 0 1 215px
+        text-align: left
         img
           width: 157px
           height: 100px
-          background: yellow
           display: inline-block
           box-shadow: 0.5px 1.9px 4px 0 rgba(0, 0, 0, 0.35), inset 4px 0 7.8px 0.2px rgba(0, 0, 0, 0.5)
           border: solid 2px rgba(255, 255, 255, 0.75)
@@ -286,18 +295,18 @@ header
             height: 100px
             width: 100px
             border-radius: 50px
-            margin-left: 28px
+            margin-left: 28.5px
       .description-box
-        width: 485px
+        flex: 0 1 400px
+        text-align: left
+        padding-right: 50px
         .title
           font-size: 20px
-          font-weight: 500
+          font-weight: 900
           line-height: 1.5
           letter-spacing: 1px
           color: #ffffff
-          margin-top: 10px
         .description
-          max-width: 428px
           opacity: 0.5
           font-family: 'Futura PT Book'
           font-size: 14px
@@ -305,17 +314,17 @@ header
           letter-spacing: 0.7px
           color: rgba(255, 255, 255, 0.5)  
       .timeline-box
-        width: 170px
-        padding-top: 30px
+        flex: 0 1 180px
         .btn
           border: 1px solid $yellow
           color: $yellow
+          font-weight: 900
           &:hover
             background: $yellow
             color: #0d1a22
 
       .controls-box
-        padding-top: 35px
+        flex: 0 1 115px
         .preview, .favorite, .edit
           display: inline-block
           margin-right: 10px
@@ -326,6 +335,4 @@ header
           font-size: 20px
           line-height: 25px
           color: #fff
-          &.icon-eye
-            font-size: 15px
-          
+                
