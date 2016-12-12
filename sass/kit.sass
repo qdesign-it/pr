@@ -1,8 +1,18 @@
 @import "bourbon"
 @import "vars.sass"
+::-webkit-input-placeholder
+  color: #fff
+:-moz-placeholder
+  color: #fff
+::-moz-placeholder
+  color: #fff
+:-ms-input-placeholder
+  color: #fff
 body
   background: black
   font-family: Futura
+  background: #000 url(http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/black-wallpaper-3.jpg) no-repeat
+  background-size: cover
 .container
   width: 1366px
   margin: auto
@@ -12,6 +22,7 @@ body
   color: #fff
   display: block
   text-align: center
+  cursor: pointer
   i
     font-size: 60px
 .content  
@@ -33,6 +44,7 @@ body
         color: #ffffff
         opacity: 0.5
         margin-bottom: 35px
+        cursor: pointer
         &.active
           opacity: 1
         i 
@@ -40,19 +52,20 @@ body
           height: 33px
           background: #fff     
           display: block 
-          margin-bottom: 15px    
-    .content-box
-      background: rgba(255, 255, 255, 0.6)
-      width: 616px
+          margin-bottom: 15px
 
+    .content-box
+      background: rgba(255, 255, 255, 0.1)
+      width: 616px
       .title
         display: block
         text-align: center
         font-size: 30px
-        font-weight: 500
+        font-weight: 900
         letter-spacing: 0.5px
         color: #ffffff
         margin: 50px 0 15px
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)  
       .subtitle
         display: block
         height: 14px
@@ -63,28 +76,37 @@ body
         text-align: center
         color: #ffffff
         margin-bottom: 40px
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)  
     .tabs-box
       .tabs-navig
-        background: rgba(0,0,0,.7)
         display: flex
         margin: 0 30px    
         text-align: center
         align-items: center
         height: 43px
+        background: rgba(0,0,0,.7)
         .tab
           opacity: 0.7
           width: 50%
           font-size: 10px
-          font-weight: 500
+          font-weight: 900
           letter-spacing: 0.5px
           color: #ffffff
           text-transform: uppercase
-         
+          background: rgba(255,255,255,.55)
           line-height: 43px
-          border-top: 2px solid transparent
+          text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)  
           &.active
-            border-top: 2px solid #fff
-            background: rgba(0,0,0,.9)
+            position: relative
+            background: none
+            &:before
+              display: block
+              content: ''
+              left: 0
+              top: 0
+              width: 100%
+              height: 1px
+              background: #fff
       .tab-content
         background: rgba(0,0,0,.7)
         padding: 30px 0 200px
@@ -100,7 +122,6 @@ body
           line-height: 40px
           background: transparent
           border: 0
-           border-radius: 20px
           background: #494949
           padding-left: 40px
     .table-data
@@ -111,11 +132,13 @@ body
         &:nth-child(even)
           background: rgba(0,0,0, .2)
         &.table-row-heading  
+          background: rgba(255,255,255, .3)
           .table-column  
             text-transform: uppercase
         &.on
           background: rgba(#5d000a    , .5)
-          
+          .dot
+            opacity: .5
         .table-column
           height: 43px
           line-height: 43px
@@ -125,11 +148,41 @@ body
           font-weight: 500
           letter-spacing: 0.5px
           color: #ffffff
+          display: flex
+          align-items: center
+          text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15)  
+          .dot
+            background: #acd152
+            width: 8px
+            height: 8px
+            margin-right: 10px
+            display: inline-block
+            border-radius: 50%
+          .icon-arrow-down
+            font-size: 17px
         &:last-child
           margin-left: auto 
   .table-row-details
     background: rgba(#2c5161, .9)   
     display: flex     
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      display: block
+      width: 100%
+      height: 30px
+      top: -32px
+      box-shadow: 0px 20px 11px -12px rgba(0, 0, 0, 0.65)
+    &:after
+      position: absolute
+      content: ''
+      display: block
+      width: 100%
+      height: 30px
+      bottom: -32px
+      left: 0
+      box-shadow: 0px -20px 11px -12px rgba(0, 0, 0, 0.65)  
   .left-box
     width: 252px
     .left-box-item
@@ -151,19 +204,24 @@ body
           margin-top: -44px
           text-align: left
       .heading
-        font-size: 16px;
-        font-weight: 500
+        font-size: 16px
+        font-weight: 900
         letter-spacing: 0.2px
         color: #ffffff
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15) 
+      .icon-arrow-right
+        font-size: 20px
+        color: #fff
+        margin-left: 10px  
       .text
-        height: 13px;
-        font-family: Futura;
-        font-size: 14px;
-        font-weight: 500;
+        font-family: Futura
+        font-size: 14px
+        font-weight: 500
         letter-spacing: 0.2px
         color: #ffffff
         text-align: right
         margin-left: auto
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15) 
         span 
           text-decoration: underline
         .time
@@ -179,13 +237,13 @@ body
             text-transform: uppercase
         .price
           position: relative
-          top: -20px
           .dollar 
             position: absolute
             top: 0
             left: 0
           .val
             font-size: 29.9px  
+            font-weight: 900
           span
             text-decoration: none
             font-size: 16px  
@@ -201,15 +259,24 @@ body
       border-left: 0
       border-right: 0
       border-bottom: 0
+      .icon-plus
+        position: absolute
+        top: 23px
+        right: 20px
+        color: #fff
+        opacity: 0.5
+        font-size: 12px
       .heading 
         font-family: Futura
         font-size: 16px
-        font-weight: 500
+        font-weight: 900
         color: #ffffff
+        padding-top: 5px
+        text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15) 
       input[type=text]  
         height: 20.5px
         background: transparent
-        border-radius: 10px
+        border-radius: 10px 0 0 10px
         border: solid 1px #ffffff
         border-top: 0
         border-right: 0
@@ -238,17 +305,28 @@ body
       line-height: 30px
       color: #fff
       color: #ffffff
-      box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.3)      
-    .faces
+      box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.3)     
+    .controls
+      float: right
+      color: #fff 
+      margin: -10px -10px  10px 0
+      i
+        &.disabled
+          opacity: .5
 
+    .faces
+      clear: both
       float: right
       display: inline-block
-      width: 200px
       height: 60px
       text-align: center
+      margin-right: 30px
+      + .heading
+        padding-top: 30px
       div
         display: inline-block
         position: relative
+        margin: 0 5px
         &.active
           img 
             opacity: 0.5
