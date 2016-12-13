@@ -45,9 +45,6 @@ body {
 }
 
 .content .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -112,16 +109,10 @@ body {
 }
 
 .content .container .tabs-box .tabs-navig {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 30px;
   text-align: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 43px;
   background: rgba(0, 0, 0, 0.7);
 }
@@ -169,8 +160,7 @@ body {
 .content .container .tabs-box .search input {
   width: 100%;
   height: 40px;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  border-radius: 20px;
   line-height: 40px;
   background: transparent;
   border: 0;
@@ -179,14 +169,8 @@ body {
 }
 
 .content .container .table-data .table-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -219,14 +203,8 @@ body {
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-shadow: 0.5px 1.9px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -236,8 +214,7 @@ body {
   height: 8px;
   margin-right: 10px;
   display: inline-block;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 .content .container .table-data .table-row .table-column .icon-arrow-down {
@@ -250,9 +227,6 @@ body {
 
 .content .table-row-details {
   background: rgba(44, 81, 97, 0.9);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -264,8 +238,7 @@ body {
   width: 100%;
   height: 30px;
   top: -32px;
-  -webkit-box-shadow: 0px 20px 11px -12px rgba(0, 0, 0, 0.65);
-          box-shadow: 0px 20px 11px -12px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 20px 11px -12px rgba(0, 0, 0, 0.65);
 }
 
 .content .table-row-details:after {
@@ -276,8 +249,7 @@ body {
   height: 30px;
   bottom: -32px;
   left: 0;
-  -webkit-box-shadow: 0px -20px 11px -12px rgba(0, 0, 0, 0.65);
-          box-shadow: 0px -20px 11px -12px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px -20px 11px -12px rgba(0, 0, 0, 0.65);
 }
 
 .content .left-box {
@@ -290,14 +262,8 @@ body {
   border: 1px solid #00afb9;
   border-left: 0;
   border-bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 30px;
 }
 
@@ -306,16 +272,11 @@ body {
 }
 
 .content .left-box .left-box-item.wrap {
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .content .left-box .left-box-item.wrap .text {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 100%;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+  flex: 1 0 100%;
   margin-top: -44px;
   text-align: left;
 }
@@ -350,9 +311,6 @@ body {
 }
 
 .content .left-box .left-box-item .text .time {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   font-size: 24px;
   text-align: center;
@@ -426,8 +384,7 @@ body {
 .content .right-box .right-box-item input[type=text] {
   height: 20.5px;
   background: transparent;
-  -webkit-border-radius: 10px 0 0 10px;
-          border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
   border: solid 1px #ffffff;
   border-top: 0;
   border-right: 0;
@@ -445,8 +402,7 @@ body {
   font-size: 12px;
   padding: 2px 8px;
   height: 20px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   color: #fff;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -457,15 +413,13 @@ body {
   float: right;
   height: 30px;
   width: 120px;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
   text-align: center;
   background: #35948e;
   line-height: 30px;
   color: #fff;
   color: #ffffff;
-  -webkit-box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .content .right-box .controls {
@@ -508,8 +462,7 @@ body {
 .content .right-box .faces img {
   width: 40px;
   height: 40px;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  border-radius: 20px;
   border: 1px solid #fff;
   display: block;
   background: #000;
