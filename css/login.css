@@ -15,7 +15,8 @@ body {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+}
 
 .btn {
   -webkit-border-radius: 20px;
@@ -28,15 +29,19 @@ body {
   line-height: 36px;
   font-family: 'Futura Lt BT';
   cursor: pointer;
-  text-decoration: none; }
-  .btn.small {
-    padding: 0 15px;
-    height: 20px;
-    line-height: 18px; }
+  text-decoration: none;
+}
+
+.btn.small {
+  padding: 0 15px;
+  height: 20px;
+  line-height: 18px;
+}
 
 .container {
   width: 500px;
-  margin: auto; }
+  margin: auto;
+}
 
 .dot {
   width: 9px;
@@ -44,17 +49,20 @@ body {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   margin: 70px auto 170px;
-  background: #fff; }
+  background: #fff;
+}
 
 .logo {
   display: block;
   margin: auto;
   width: 164px;
-  margin-bottom: 140px; }
+  margin-bottom: 140px;
+}
 
 .input-box {
   margin-bottom: 35px;
-  position: relative; }
+  position: relative;
+}
 
 .icon-error {
   display: none;
@@ -65,21 +73,24 @@ body {
   height: 13px;
   font-size: 13px;
   color: yellow;
-  opacity: 0.3; }
+  opacity: 0.3;
+}
 
 .icon-help {
   display: inline-block;
   margin-right: 8px;
   width: 20px;
   height: 20px;
-  background: #fff; }
+  background: #fff;
+}
 
 .note-error {
   display: none;
   position: absolute;
   bottom: -24px;
   left: 180px;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+}
 
 label {
   display: inline-block;
@@ -92,7 +103,8 @@ label {
   color: #ffffff;
   margin-right: 20px;
   opacity: 0.5;
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 input {
   background: transparent;
@@ -104,12 +116,14 @@ input {
   border-bottom: 1px solid #836b7b;
   color: #fff;
   letter-spacing: 1px;
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 .buttons-box {
   text-align: center;
   margin-top: 130px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 .btn-login {
   width: 336px;
@@ -124,7 +138,8 @@ input {
   font-size: 20.2px;
   letter-spacing: 3px;
   display: block;
-  margin: auto; }
+  margin: auto;
+}
 
 .btn-access {
   width: 336px;
@@ -138,22 +153,27 @@ input {
   font-weight: 500;
   letter-spacing: 1px;
   margin: 20px auto;
-  display: block; }
+  display: block;
+}
 
 .link-password {
   opacity: 0.3;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .icon-warning {
   color: yellow;
   right: 20px;
   top: 17px;
   position: absolute;
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
 .error .note-error, .error .icon-warning {
-  display: block !important; }
+  display: block !important;
+}
 
 .error input {
-  border-bottom: 1px solid #ffe03f; }
+  border-bottom: 1px solid #ffe03f;
+}
